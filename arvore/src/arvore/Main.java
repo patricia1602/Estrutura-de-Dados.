@@ -5,8 +5,7 @@ public class Main {
 
         ArvoreBinaria arvore = new ArvoreBinaria();
 
-        // Inserindo elementos na arvore
-
+        // Inserindo elementos na árvore
         arvore.inserePrimeiroElemento(888);
         arvore.insereElemento(555);
         arvore.insereElemento(333);

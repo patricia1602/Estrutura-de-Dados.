@@ -81,18 +81,19 @@ public class ArvoreBinaria {
             System.out.println();
             return;
         }
-        // Recursivamente chama para a sub=arvore direita com um nivel de recuo maior
+
+        // Recursivamente chama para a sub-arvore direita com um nível de recuo maior
         imprimirComRecuosRecursivo(no.getDireita(), nivel + 1);
 
-        // Imprime recuo proporcional ao nivel atual
+        // Imprime recuo proporcional ao nível atual
         for (int i = 0; i < nivel; i++) {
             System.out.print("  ");
         }
 
-        // Imprime o valor do no
+        // Imprime o valor do nó
         System.out.println(no.getValor());
 
-        // Recursivamente chama para a sub-arvore esquerda com o mesmo nivel de recuo
+        // Recursivamente chama para a sub-arvore esquerda com o mesmo nível de recuo
         imprimirComRecuosRecursivo(no.getEsquerda(), nivel + 1);
     }
 }
